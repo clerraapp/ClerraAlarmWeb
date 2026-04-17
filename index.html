@@ -144,6 +144,15 @@
             color: white;
         }
 
+        .app-badge {
+            height: 54px;
+            transition: transform 0.3s ease;
+        }
+
+        .app-badge:hover {
+            transform: scale(1.05);
+        }
+
         .btn-primary:hover {
             background: var(--accent-dark);
             transform: translateY(-3px) scale(1.02);
@@ -873,8 +882,9 @@
                 <h1>Never Snooze<br>Your Life <span>Away again.</span></h1>
                 <p>ClerraAlarm transforms your first 10 minutes from a struggle into a mission. Build discipline, one morning at a time.</p>
                 <div class="hero-buttons">
-                    <a href="#download" class="btn btn-primary">Download App <span>→</span></a>
-                    <a href="#how-it-works" class="btn btn-outline">See Missions</a>
+                    <a href="#" class="badge-link">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-badge">
+                    </a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -1010,7 +1020,9 @@
                 <h2>Ready to upgrade your mornings?</h2>
                 <p>Join thousands who have transformed their morning routine.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-dark">Download for iOS</a>
+                    <a href="#" class="badge-link">
+                        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="app-badge">
+                    </a>
                 </div>
             </div>
         </div>
