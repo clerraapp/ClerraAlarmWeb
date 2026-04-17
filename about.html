@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ClerraAlarm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #FF7F62;
+            --accent-light: #FFB5A7;
+            --accent-dark: #E65A3C;
+            --background: #FEF4EC;
+            --foreground: #2E1E1A;
+            --muted: #A09088;
+            --surface: #FFE5DD;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        nav { padding: 24px 0; background: rgba(254, 244, 236, 0.9); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .back-link { display: flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none; font-weight: 600; font-size: 14px; transition: color 0.3s; }
+        .back-link:hover { color: var(--accent); }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo img { height: 36px; }
+        .logo-text { font-family: 'Outfit', sans-serif; font-size: 24px; font-weight: 800; color: var(--foreground); }
+
+        .content {
+            padding: 80px 0;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 48px;
+            margin-bottom: 32px;
+            color: var(--foreground);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            margin: 48px 0 24px;
+            color: var(--accent);
+        }
+
+        p {
+            font-size: 18px;
+            color: var(--muted);
+            margin-bottom: 24px;
+        }
+
+        .vision-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            margin: 60px 0;
+        }
+
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-top: 24px;
+        }
+
+        .footer-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="appshots/ClerraAlarm logo.png" alt="ClerraAlarm">
+                <span class="logo-text">ClerraAlarm</span>
+            </a>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="container">
+            <h1>Our Mission: Conquer the Morning.</h1>
+            <p>ClerraAlarm was born out of a simple realization: the first ten minutes of your day determine the next sixteen hours. For most of us, those ten minutes are a blur of snoozing, half-sleep, and reactive scrolling.</p>
+            
+            <div class="vision-card">
+                <h2>The Struggle is Real</h2>
+                <p>Willpower is at its lowest the moment we wake up. We built ClerraAlarm to provide the "external willpower" you need to transition from sleep to action without the struggle.</p>
+            </div>
+
+            <h2>Discipline Through Design</h2>
+            <p>We don't believe in waking up to loud, jarring noises. We believe in waking up to beauty, followed by intentional challenge. Our cinematic wallpapers and science-backed missions—Math, Physical, and Creative—are designed to spark your brain and body into gear.</p>
+
+            <h2>Meet the Maker</h2>
+            <p>ClerraAlarm is crafted for high-performers, students, and anyone who wants to reclaim their time. We are a small team dedicated to building tools that foster discipline and mental clarity.</p>
+
+            <p style="margin-top: 60px; font-weight: 600;">Welcome to a better morning.<br>Welcome to ClerraAlarm.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 24px;">
+                <img src="appshots/ClerraAlarm logo.png" alt="ClerraAlarm">
+                <span class="logo-text" style="color: var(--accent);">ClerraAlarm</span>
+            </a>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="refund.html">Refunds</a>
+                <a href="support.html">Support</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
