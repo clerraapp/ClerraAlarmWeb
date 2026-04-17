@@ -487,8 +487,19 @@
             grid-template-columns: 1fr 1fr;
             gap: 80px;
             align-items: center;
-            margin-bottom: 120px;
+            background: var(--white);
+            padding: 80px 60px;
+            border-radius: 40px;
+            position: sticky;
+            top: 100px;
+            margin-bottom: 30vh;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.04);
         }
+
+        .feature-row:nth-child(2) { z-index: 10; transform: translateY(0); }
+        .feature-row:nth-child(3) { z-index: 20; transform: translateY(0); }
+        .feature-row:nth-child(4) { z-index: 30; transform: translateY(0); }
 
         .feature-row.reverse {
             direction: rtl;
@@ -814,6 +825,24 @@
 
             .cta-card {
                 padding: 48px 24px;
+            }
+
+            .feature-row {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 48px 24px;
+                text-align: center;
+                top: 70px;
+                border-radius: 32px;
+                margin-bottom: 10vh;
+            }
+
+            .feature-content {
+                max-width: 100%;
+            }
+
+            .feature-list {
+                align-items: center;
             }
 
             footer .container {
